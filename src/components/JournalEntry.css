@@ -1,0 +1,92 @@
+.journal-container {
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    color: white;
+  }
+  
+  .journal-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00ffff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 12px 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .mood-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .mood-button {
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .mood-button:hover,
+  .mood-button.selected {
+    background-color: white;
+    color: black;
+  }
+  
+  .journal-textarea {
+
+    height: 451px; 
+    width: 782px;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .journal-history {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .journal-entry {
+    background-color: rgba(255,255,255,0.1);
+    padding: 14px;
+    border-radius: 12px;
+  }
+  .journal-wrapper {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+  }
+  
+  .lightning-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.6) contrast(1.2);
+  }
+  
+  .journal-content {
+    position: relative;
+    z-index: 1;
+    padding-top: 60px;
+    text-align: center;
+  }

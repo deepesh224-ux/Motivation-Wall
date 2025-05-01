@@ -1,0 +1,157 @@
+.wall-wrapper {
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.6);
+}
+  
+.container.content {
+    position: relative;
+    z-index: 2;
+    padding-top: 60px;
+    
+}
+  
+.subtitle-container {
+    position: fixed;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    pointer-events: none;
+}
+  
+.subtitle-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00ffff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 12px 20px;
+    border-radius: 12px;
+    display: inline-block;
+    animation: fadeLoop 4s ease-in-out infinite;
+}
+  
+@keyframes fadeLoop {
+    0% { opacity: 0; transform: translateY(10px); }
+    10% { opacity: 1; transform: translateY(0); }
+    90% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+}
+.mood-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .mood-button {
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.4);
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .mood-button:hover {
+    background: rgba(0, 255, 255, 0.2);
+    transform: scale(1.1);
+  }
+  
+  .mood-button.active {
+    background: rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  }
+  
+  .mood-display {
+    font-size: 1.2rem;
+    color: #0ff;
+    margin-top: 6px;
+  }
+  .mood-stats {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .mood-stats h2 {
+    font-size: 1.5rem;
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+  }
+  
+  .mood-stats ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .mood-stats {
+    background-color: rgba(0, 0, 0, 0.4); /* More transparent */
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Optional: adds glass effect */
+  }
+  
+  .mood-stats h2 {
+    font-size: 1.5rem;
+    color: #00ffff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+  }
+  
+  .mood-stats li {
+    background: rgba(0, 0, 0, 0.3); /* lighter entry background */
+    box-shadow: 0 0 5px #0ff;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+  
+  .mood-stats canvas {
+    max-width: 100%;
+    height: auto;
+  }
+  @media (max-width: 768px) {
+    .subtitle-text {
+      font-size: 1.2rem;
+      padding: 8px 12px;
+    }
+  
+    .mood-buttons {
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  
+    .mood-button {
+      font-size: 1.2rem;
+      padding: 5px 10px;
+    }
+  
+    .mood-stats li {
+      font-size: 1rem;
+    }
+  
+    .mood-stats {
+      padding: 15px;
+    }
+  
+    .subtitle-container {
+      bottom: 5%;
+    }
+  }
+  

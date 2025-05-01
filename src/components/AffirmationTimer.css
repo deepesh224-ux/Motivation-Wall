@@ -1,0 +1,42 @@
+/* src/components/AffirmationTimer.css */
+
+.affirmation-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .affirmation-text {
+
+
+
+
+
+    animation: fadeIn 1s ease-in-out;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    max-width: 90%;
+    margin: 0 auto;
+    backdrop-filter: blur(4px);
+
+
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ffff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 12px 24px;
+    border-radius: 12px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
