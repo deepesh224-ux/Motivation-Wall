@@ -33,7 +33,7 @@ function JournalEntry() {
   return (
     <div className="journal-wrapper">
         <video className="lightning-bg" autoPlay loop muted playsInline>
-        <source src="public/Lightning-bg.mp4" type="video/mp4" />
+        <source src="/Lightning-bg.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <audio autoPlay loop hidden>
